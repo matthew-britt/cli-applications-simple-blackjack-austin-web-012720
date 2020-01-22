@@ -30,7 +30,7 @@ end
 
 def hit?(current_number)
   prompt_user
-  get_user_input
+  command == get_user_input
   if 'h'
     deal_card
     current_number = deal_card + current_number
