@@ -31,7 +31,7 @@ end
 def hit?(current_number)
   prompt_user
   command = get_user_input
-    if command = 's'
+    if command == 's'
       return current_number
     elsif command == 'h'
       total = deal_card + current_number
@@ -51,6 +51,9 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  deal_card
+  hit?
+  
 end
     
