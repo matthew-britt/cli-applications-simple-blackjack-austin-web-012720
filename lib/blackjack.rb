@@ -34,13 +34,15 @@ def hit?(current_number)
     if command == 's'
       return current_number
     elsif command == 'h'
-      deal_card
-      current_number = deal_card + current_number
+      total = deal_card + current_number
+    else
+      invalid_command
+      prompt_user
   end
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
